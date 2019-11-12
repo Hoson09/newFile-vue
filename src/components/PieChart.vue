@@ -6,7 +6,20 @@
 export default {
   name: 'piechart',
   data() {
-    return {};
+    return {
+      dataArr:[]
+    };
+  },
+  created(){
+    this.dataArr = []
+  },
+  mounted(){
+    this.initPie();
+  },
+  methods:{
+    initPie(){
+
+    }
   }
 };
 </script>
