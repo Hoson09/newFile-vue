@@ -3,11 +3,25 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <el-button type="primary">主要按钮</el-button>
+      <el-button type="primary" @click="handle">主要按钮</el-button>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  name:'app',
+  data(){
+    return{}
+  },
+  methods:{
+    handle(){
+      this.$router.push('/mainview');
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
